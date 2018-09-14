@@ -59,7 +59,7 @@ const module = {
     loader: 'url-loader',
     options: {
       fallback: 'file-loader',
-      outputPath: `${assetsSubDir}/img`,
+      outputPath: `${assetsSubDir}/font`,
       name: `[name].${!dev ? '[hash:10].' : ''}[ext]`,
       limit: 3 * 1024,
     }
@@ -72,7 +72,7 @@ const module = {
 
 // 解析
 const resolve = {
-  extensions: ['.js', '.json', 'css'],
+  extensions: ['.js', '.json', '.css', '.less'],
   alias: {
     'src': pathResolve('src'),      
     'js': pathResolve('src', 'js'),
